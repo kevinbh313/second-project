@@ -1,0 +1,299 @@
+
+/* || Base style */
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font: normal 1em/1.5 "Montserrat", helvetica, arial, sans-serif;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .main-header,
+  .contact,
+  .main-footer {
+    background-color: #fafafa;
+  }
+  
+  h1 {
+    font-family: "Patrick Hand", cursive;
+  }
+  
+  p {
+    color: #6d6c6a;
+    font-size: 1.5em;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* || Base Layout */
+  
+  .main-header,
+  .contact,
+  .main-footer {
+    padding: 1em 0;
+  }
+  
+  .main-nav {
+    text-transform: uppercase;
+    display: inline-block;
+    width: 90%;
+    font-weight: bold;
+  }
+  
+  .main-nav li {
+    background-color: #fff;
+    padding: 1em;
+    margin-top: 5px;
+  }
+  
+  .main-nav li a {
+    display: block;
+  }
+  
+  .intro img {
+    margin-top: 50px;
+  }
+  
+  .intro {
+    padding: 0 1.5em;
+  }
+  
+  .intro p {
+    padding-bottom: 24px;
+  }
+  
+  main .portfolio {
+    margin-top: 55px;
+    text-transform: uppercase;
+  }
+  
+  .project-wrapper {
+    padding: 1.5em;
+    margin: 30px 0;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .contact h2 {
+    margin: 60px 0 45px;
+  }
+  
+  .contact section {
+    padding: 0 1.25em;
+  }
+  
+  .email,
+  .phone {
+    font-size: 1rem;
+  }
+  
+  .skills section {
+    padding: 3em;
+  }
+  
+  .skills {
+    background: linear-gradient(to left, #faeafa, transparent),
+      linear-gradient(to right, #fbfbb2, transparent);
+  }
+  
+  .css-icon,
+  .html-icon {
+    padding: 30px;
+  }
+  
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  hr {
+    margin: 10px 0;
+    background-color: lightgray;
+  }
+  
+  .footer-nav {
+    float: right;
+    margin-top: 16px;
+    text-transform: uppercase;
+    padding: 5px;
+  }
+  
+  .main-footer h3 {
+    float: left;
+    margin-top: 16px;
+  }
+  
+  .footer-nav .desktop {
+    display: none;
+  }
+  
+  .group::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* || Media queries */
+  
+  @media (min-width: 768px) {
+    /* || Styles for the link state */
+  
+    a:link {
+      color: gray;
+    }
+  
+    a:visited {
+      color: blue;
+    }
+  
+    a:hover {
+      border-bottom: 2px solid #000;
+      background-color: lightblue;
+    }
+  
+    a:focus {
+      border-bottom: 2px solid #000;
+      background-color: royalblue;
+      color: white;
+    }
+  
+    a:active {
+      border-bottom: 2px solid #000;
+      background-color: green;
+    }
+  
+    /* || Styling header section */
+  
+    .main-nav li {
+      display: inline-block;
+      background-color: #fafafa;
+      margin-right: 16px;
+      padding: 13px;
+    }
+  
+    .intro img {
+      float: right;
+      width: 40%;
+      margin-top: 20px;
+      padding: 0 10px;
+    }
+  
+    .intro p {
+      float: left;
+      width: 60%;
+      text-align: left;
+      padding: 0 1em;
+    }
+  
+    .intro img,
+    .intro p {
+      margin: 40px 0;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    /* || project layout */
+  
+    .project-marketing,
+    .project-search {
+      width: 50%;
+      float: left;
+      padding: 0 7px;
+    }
+  
+    .project-travel,
+    .project-map {
+      width: 50%;
+      float: left;
+      padding: 0 7px;
+    }
+  
+    .project-photo,
+    .project-calculator {
+      width: 50%;
+      float: left;
+      padding: 0 7px;
+    }
+  
+    .project-wrapper {
+      max-width: 807px;
+      margin: 0 auto;
+    }
+  
+    /* || Styling the contact section */
+  
+    .contact section {
+      margin-bottom: 55px;
+    }
+  
+    .contact p {
+      font-size: 1.5em;
+      padding: 10px 0;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+  
+    .footer-nav .phone {
+      display: none;
+    }
+  
+    .footer-nav .desktop {
+      display: inline-block;
+      padding: 0 16px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+  
+  /* || Media 1024px */
+  
+  @media (min-width: 1024px) {
+    .site-name {
+      float: left;
+      margin: 16px 0px 5px 40px;
+    }
+    .main-nav {
+      float: right;
+      width: auto;
+      margin-top: 20px;
+      margin-right: 14px;
+    }
+  
+    .intro p {
+      font-size: 1.34em;
+    }
+  
+    .project-marketing,
+    .project-search,
+    .project-travel {
+      width: 33%;
+      float: left;
+    }
+  
+    .project-map,
+    .project-photo,
+    .project-calculator {
+      width: 33%;
+      float: left;
+    }
+  
+    .project-wrapper {
+      min-width: 1024px;
+      max-width: 1424px;
+    }
+  }
