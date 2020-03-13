@@ -1,6 +1,4 @@
 
-/* || Base style */
-
 html {
     box-sizing: border-box;
   }
@@ -24,7 +22,7 @@ html {
   }
   
   h1 {
-    font-family: "Patrick Hand", cursive;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   p {
@@ -35,8 +33,7 @@ html {
   a {
     text-decoration: none;
   }
-  
-  /* || Base Layout */
+
   
   .main-header,
   .contact,
@@ -88,11 +85,11 @@ html {
   }
   
   .contact h2 {
-    margin: 60px 0 45px;
+    margin: 60px;
   }
   
   .contact section {
-    padding: 0 1.25em;
+    padding: 3px;
   }
   
   .email,
@@ -102,16 +99,6 @@ html {
   
   .skills section {
     padding: 3em;
-  }
-  
-  .skills {
-    background: linear-gradient(to left, #faeafa, transparent),
-      linear-gradient(to right, #fbfbb2, transparent);
-  }
-  
-  .css-icon,
-  .html-icon {
-    padding: 30px;
   }
   
   .wrapper {
@@ -146,22 +133,19 @@ html {
     clear: both;
   }
   
-  /* || Media queries */
   
   @media (min-width: 768px) {
-    /* || Styles for the link state */
   
     a:link {
       color: gray;
     }
   
     a:visited {
-      color: blue;
+      color: pink;
     }
   
     a:hover {
       border-bottom: 2px solid #000;
-      background-color: lightblue;
     }
   
     a:focus {
@@ -174,8 +158,6 @@ html {
       border-bottom: 2px solid #000;
       background-color: green;
     }
-  
-    /* || Styling header section */
   
     .main-nav li {
       display: inline-block;
@@ -207,8 +189,6 @@ html {
       font-size: 1rem;
     }
   
-    /* || project layout */
-  
     .project-marketing,
     .project-search {
       width: 50%;
@@ -235,8 +215,6 @@ html {
       margin: 0 auto;
     }
   
-    /* || Styling the contact section */
-  
     .contact section {
       margin-bottom: 55px;
     }
@@ -259,8 +237,6 @@ html {
       font-size: 14px;
     }
   }
-  
-  /* || Media 1024px */
   
   @media (min-width: 1024px) {
     .site-name {
